@@ -151,7 +151,7 @@ export default function AuthPage() {
   return (
     <>
       {isLoading && <Loader />}
-      <div className="min-h-dvh center flex-wrap md:!justify-around gap-5 container mx-auto w-4/5">
+      <div className="min-h-dvh center flex-wrap md:!justify-around md:gap-5 container mx-auto w-4/5 gap-0 bg-red">
         <div className="center gap-5 text-4xl font-bold text-blue-600">
           <div className="text-black text-4xl">
             <SlSocialStumbleupon />

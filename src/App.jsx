@@ -15,6 +15,7 @@ import Profile from "./Pages/Profile/Profile";
 import SinglePost from "./Pages/SinglePost/SinglePost";
 import Search from "./Pages/Search/Search";
 import PostContextProvider from "./Context/PostContext";
+import NotFound from "./Pages/NotFound/NotFound";
 
 function App() {
   const routes = createBrowserRouter([
@@ -31,6 +32,7 @@ function App() {
         { path: "profile/:id", element: <Profile /> },
         { path: "post/:id", element: <SinglePost /> },
         { path: "search", element: <Search/> },
+        { path: "*", element: <NotFound/> },
         {
           path: "settings",
           element: <Settings />,
