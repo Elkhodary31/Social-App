@@ -339,7 +339,7 @@ export default function AuthPage() {
                   type="submit"
                   isDisabled={isLoading}
                 >
-                  Submit
+                  {activeTab === "login" ? "Login" : "Register"}
                 </Button>
                 {activeTab !== "login" && (
                   <Button type="reset" variant="bordered">
